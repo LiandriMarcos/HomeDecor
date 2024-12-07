@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /*fonte*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Roboto";
+}
+
+:root {
+    --cinza: #D3CFC5;
+    --marrom: #aa8a63;
+    --cinza2: #3f4946;
+    --verde: #6d804e;
+    --verde2: #295326;
+}
+
+header {
+    width: 100%; /*largura*/
+    height: 500px; /*altura*/
+    background-color: var(--cinza);
+}
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /*linha do flex*/
+    padding: 10px; /*espaço entre eles*/
+}
+
+nav {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: row; /*linha do flex*/
+    align-items: center; /*alinhar os itens*/
+    justify-content: space-between;
+}
+.nome {
+    font-size: 24px;
+    color: var(--cinza2)
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    list-style: none; /*tirar as bolinhas dos marcadores*/
+    padding: 10px; /*espaço entre eles*/
+    color: var(--cinza2);
+}
+nav ul button {
+    border: 1px solid var(--cinza2); /*fixar a cor à borda do botão*/
+    background: transparent; /*tirar a cor do botão*/
+    padding: 8px 35px; /*aumentar a borda do botão*/
+    margin-left: 25px; /*aumentar o espaço entre a borda e o outro item*/
+    color: var(--cinza2);
+    font-weight: bold; /*colocar o botão em negrito*/
+    border-radius: 8px; /*arredondar a borda do botão*/
+    cursor: pointer; /* muda o estilo do mouse quando passa por cima do botao*/
+}
+
+.content .header-block {
+    width: 1000px;
+    height: 450px;
+    background: var(--cinza2);
+    border-radius: 8px; /*arredondar a borda*/
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5); /*sombra do bloco, sua cor e transparencia*/
+    padding: 10px;
+}
+
+.header-block img {
+    width: 20%; /*alterar o tamanho da img*/
+    position: absolute;
+    right: 25%; /*quantos % para a direita ela vai ficar*/
+    top: 20%;
+}
+
+.header-block .text {
+    position: absolute;
+    bottom: 55%;
+    left: 35%
+
+}
+
+.header-block .text h2 {
+    color: white;
+    text-align: right;
+}
+
+.header-block .text p {
+    max-width: 360px;
+    color: white;
+    text-align: right;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*Produtos*/
+
+section .catalog {
+    width: 100vw; /*largura da tela que vai ocupar*/
+    padding: 100px;
+}
+
+section .filtros-dos-cards {
+    width: 1000px;
+    height: 70px;
+    background: var(--cinza);
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-catalogo {
+    margin-top: 150px;
+}
+
+section .container-card {
+    max-width: 1000px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); /*editar as colunas para que se repitam*/
+    grid-gap: 55px; /*espaço entre os itens*/
+    padding-top: 70px;
+}
+
+section .card-item {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-item img {
+    width: 310px;
+}
+
+.card-item h3 {
+    margin-top: 20px;
+    width: 90%
+}
+
+.card-item h4 {
+    margin-top: 5px;
+    font-size:large;
+}
+
+.card-item p {
+    width: 90%;
+    color:rgba(63, 59, 59, 0.5);
+}
+
+.card-item button {
+    width: 108%; /*largura do botao*/
+    padding: 15px 0px; /*altura do botao*/
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.1em; /*tamanho da escrita dentro do botao*/
+    cursor: pointer;
+}
+
+.card-item button:hover {
+    background: var(--cinza); /*cor do botao quando o mouse passa por cima*/
+    color: #ffff; /*cor do texto quando o mouse passa por cima*/
+}
+
+footer {
+    background-color: var(--cinza);
+}
+
+footer p {
+    color: var(--cinza);
+}
